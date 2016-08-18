@@ -1,0 +1,16 @@
+{
+    "version": "0.1",
+    "name": "Cache Cleaner",
+    "description": "Ards Data entry Cache Cleaner App",
+    "launch_path": "index.html",
+    "developer": {
+        "name": "Joseph Chingalo",
+        "url": ""
+    },
+    "default_locale": "en",
+    "activities": {
+        "dhis": {
+            "href": ".."
+        }
+    }
+}
