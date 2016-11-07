@@ -116,7 +116,7 @@
                 <table class="table table-bordered table-striped" ng-if="ssCacheExists">
                     <tr ng-repeat="ssKey in ssKeys">
                         <td>
-                            {{ssKey.id}}
+                            {{ssKey.id|renameCacheOrLocalStorage}}
                         </td>
                         <td>
                             <input type="checkbox" ng-model="ssKey.remove">
@@ -128,7 +128,7 @@
                 <table class="table table-bordered table-striped" ng-if="lsCacheExists">
                     <tr ng-repeat="lsKey in lsKeys">
                         <td>
-                            {{lsKey.id}}
+                            {{lsKey.id|renameCacheOrLocalStorage}}
                         </td>
                         <td>
                             <input type="checkbox" ng-model="lsKey.remove">
@@ -140,7 +140,7 @@
                 <table class="table table-bordered table-striped" ng-if="idCacheExists">
                     <tr ng-repeat="dbKey in dbKeys">
                         <td>
-                            {{dbKey.id}}
+                            {{dbKey.id|renameIdDb}}
                         </td>
                         <td>
                             <input type="checkbox" ng-model="dbKey.remove">
